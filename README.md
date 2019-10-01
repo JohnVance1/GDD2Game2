@@ -1,13 +1,13 @@
-# Flacid Halloween
+# Flaccid Halloween
 
 ### SAD DJ
 
 | Version Control Master | Scrum Master    |
 | ---------------------- | --------------- |
-| Name                   | Name            |
-| RIT username           | RIT username    |
-| Discord name           | Discord name    |
-| GitHub username        | GitHub username |
+| John Vance             | Adam Hall       |
+| jmv7411                | ash5572         |
+| Cake                   | Big Bear (Adam) |
+| JohnVance1             | AdamHGDD        |
 
 #### Keywords
 
