@@ -29,21 +29,21 @@ Why wish to make the player both laugh but at the same time also be scared. The 
 
 1.  Core Mechaninc
 
-    -   The core mechanic in a game will usually be the purposeful interaction that occurs the most frequently. In a platforming game, this is usually jumping. In a shooter, it is usually shooting. In a racing game, it will be driving. Another way to determine the core mechanic is, if without it, you wouldn’t be able to play the game at all.
+    -   Walking in a 3D space through a first person view
 
 2.  Secondary Mechancis
 
-    -   The secondary mechanics are the interactions that happen less frequently. They could even be layered out from more frequent to least frequent.
-    -   List each
+    -   Pick up collectable items and keep them
+    -   Interact with objects to change the surrounding area
 
 
 3.  Progression
 
-    -   Progression systems form the mechanical envelope of the game, being the source of change within the game system at a holistic level.
+    -   You will complete the game if you collect all items
 
 4.  Narrative
 
-    -   The Narrative layer is the outer most layer that puts all the inner layers within it into context.
+    -   A dead man at the graveyard that you tend to can not find peace and is stuck on this plane. The skeleton is upset about this fact and is taking his anger out on you. But since skeletons don't have muscles he can't walk, so instead he just throws himself at you.
 
 #### Minimal Viable Interaction
 
@@ -52,3 +52,12 @@ First person controller in a scene with at least one object that can be interact
 #### References
 
 Pease add a short description of how this is relevant to your game (mechanic, art, theme, etc.). There is no limit to how many references you can have.
+
+    - https://www.youtube.com/watch?v=6kVjVYSHZ4U&t=73s
+Parody horror movie with minor slapstick comedy where the thing to be feared is over the top but still acts as if it were a normal horror character.
+    - https://cdn.vox-cdn.com/thumbor/eMffAyUYeFJ4CQmBFJtjZQlmf7c=/0x0:1920x1080/1200x800/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/63120693/Screenshot__757_.0.png
+True horror themeing with the full scary feel that the games can create
+    - https://www.mweb.co.za/DesktopModules/DigArticle/MediaHandler.ashx?portalid=20&moduleid=5259&mediaid=3367&width=665&height=400
+Horror game with slow speed, something chasing you and things to collect, but without environmental interactions
+    - https://developer.valvesoftware.com/w/images/thumb/6/6b/Pistonplatformingame.jpg/300px-Pistonplatformingame.jpg
+Example type of environmental changes that are effected by your interactions. Though ours won't be puzzle themed it will just have similar changes in environment around you.
