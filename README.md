@@ -1,6 +1,6 @@
-# FunWithGit _(Game Name)_
+# Flacid Halloween
 
-### _(Team Name)_
+### SAD DJ
 
 | Version Control Master | Scrum Master    |
 | ---------------------- | --------------- |
