@@ -54,10 +54,10 @@ First person controller in a scene with at least one object that can be interact
 Pease add a short description of how this is relevant to your game (mechanic, art, theme, etc.). There is no limit to how many references you can have.
 
 1.  https://www.youtube.com/watch?v=6kVjVYSHZ4U&t=73s
-Parody horror movie with minor slapstick comedy where the thing to be feared is over the top but still acts as if it were a normal horror character.
+    -  Parody horror movie with minor slapstick comedy where the thing to be feared is over the top but still acts as if it were a normal horror character.
 2.  https://cdn.vox-cdn.com/thumbor/eMffAyUYeFJ4CQmBFJtjZQlmf7c=/0x0:1920x1080/1200x800/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/63120693/Screenshot__757_.0.png
-True horror themeing with the full scary feel that the games can create
+    -  True horror themeing with the full scary feel that the games can create
 3. https://www.mweb.co.za/DesktopModules/DigArticle/MediaHandler.ashx?portalid=20&moduleid=5259&mediaid=3367&width=665&height=400
-Horror game with slow speed, something chasing you and things to collect, but without environmental interactions
+    -  Horror game with slow speed, something chasing you and things to collect, but without environmental interactions
 4.  https://developer.valvesoftware.com/w/images/thumb/6/6b/Pistonplatformingame.jpg/300px-Pistonplatformingame.jpg
-Example type of environmental changes that are effected by your interactions. Though ours won't be puzzle themed it will just have similar changes in environment around you.
+    -  Example type of environmental changes that are effected by your interactions. Though ours won't be puzzle themed it will just have similar changes in environment around you.
