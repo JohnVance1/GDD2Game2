@@ -17,7 +17,7 @@
 
 #### Platforms(s)
 
--   List each
+-   Desktop Application
 
 #### Target Player Exerience
 
@@ -45,7 +45,7 @@ What kind of experience do you want the player to have with your game? Are they 
 
 #### Minimal Viable Interaction
 
-What will be in your MVI? What will the player be able to do? Why only this? We may have a back and forth on this because this will be what I use to measure if you delivered an MVI.
+First person controller in a scene with at least one object that can be interacted with and one object that can be "picked up" such that they disappear and the game remembers you have pick an item up. And there is an "enemy" that directly follows you with  no pathfinding.
 
 #### References
 
