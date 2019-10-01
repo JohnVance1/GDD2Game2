@@ -11,9 +11,11 @@
 
 #### Keywords
 
--   Adjectives
--   Max 10
--   Capture key aspects of the idea
+-   Funny
+-   Spooky
+-   Dark
+-   Moody
+-   Parody
 
 #### Platforms(s)
 
@@ -21,7 +23,7 @@
 
 #### Target Player Exerience
 
-What kind of experience do you want the player to have with your game? Are they going to have to outsmart their enemies, explore a new world. Do not list the game’s mechanics or features and do not use the word “UNIQUE”.
+Why wish to make the player both laugh but at the same time also be scared. The game shall emulate horror game feelings, but parody it at the same time.
 
 #### Core Diagram
 
