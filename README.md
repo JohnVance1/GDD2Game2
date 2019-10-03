@@ -23,7 +23,7 @@
 
 #### Target Player Exerience
 
-Why wish to make the player both laugh but at the same time also be scared. The game shall emulate horror game feelings, but parody it at the same time.
+We wish to make the player both laugh but at the same time also be scared. The game shall emulate horror game feelings, but parody it at the same time.
 
 #### Core Diagram
 
