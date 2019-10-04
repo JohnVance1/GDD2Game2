@@ -43,7 +43,7 @@ We wish to make the player both laugh but at the same time cry in fear. The game
 
 4.  Narrative
 
-    -   A dead man at the graveyard that you tend to can not find peace and is stuck on this mortal plane. His skeleton is upset about this fact and is taking his anger out on you. But since skeletons don't have muscles he can't walk, so instead he just throws himself at you. This will be the source of most comedy as the skeleton will be ragdoll.
+    -   A dead man at the graveyard that you tend to can not find peace and is stuck on this mortal plane. His skeleton is upset about this fact and is taking his anger out on you. But since skeletons don't have muscles he can't walk, so instead he just throws himself at you. This will be the source of most comedy as the skeleton will be ragdoll heavily and be launched around.
 
 #### Minimal Viable Interaction
 
