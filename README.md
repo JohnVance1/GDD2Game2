@@ -51,7 +51,7 @@ First person controller in a scene with at least one object that can be interact
 
 #### References
 
-Pease add a short description of how this is relevant to your game (mechanic, art, theme, etc.). There is no limit to how many references you can have.
+Please add a short description of how this is relevant to your game (mechanic, art, theme, etc.). There is no limit to how many references you can have.
 
 1.  https://www.youtube.com/watch?v=6kVjVYSHZ4U&t=73s
     -  Parody horror movie with minor slapstick comedy where the thing to be feared is over the top but still acts as if it were a normal horror character.
