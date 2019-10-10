@@ -10,8 +10,8 @@ public class Item_manager : MonoBehaviour
     public List<GameObject> interactables;
     public int interactablesCollected;
 
-    private bool isNear = false;
-    private bool isItem = false;
+    private bool itemNear = false;
+    private bool interactableNear = false;
     private GameObject closest;
 
     // Start is called before the first frame update
@@ -24,7 +24,8 @@ public class Item_manager : MonoBehaviour
     void Update()
     {
         itemCheck();
-        interactableCheck();
+        //uncomment when interactables are implemented
+        //interactableCheck();
     }
 
     void itemCheck()
@@ -39,12 +40,11 @@ public class Item_manager : MonoBehaviour
                 player.transform.position.z > item.transform.position.z - 10 &&
                 player.transform.position.z < item.transform.position.z + 10)
             {
-                isNear = true;
+                itemNear = true;
                 //set closest
                 if (closest == null)
                 {
                     closest = item;
-                    isItem = true;
                 }
                 else if (closest != null || closest != item)
                 {
@@ -52,7 +52,6 @@ public class Item_manager : MonoBehaviour
                     if (Vector3.Distance(player.transform.position, item.transform.position) < Vector3.Distance(player.transform.position, closest.transform.position))
                     {
                         closest = item;
-                        isItem = true;
                     }
                 }
             }
@@ -64,15 +63,16 @@ public class Item_manager : MonoBehaviour
         //if none of the items were near, don't bring up the option
         if (counter == items.Count)
         {
-            isNear = false;
+            itemNear = false;
         }
 
         //if the player is near an item, let it pick it up
-        if (isNear)
+        if (itemNear)
         {
             if (Input.GetKey(KeyCode.E))
             {
                 items.Remove(closest);
+                Destroy(closest);
                 itemsCollected++;
             }
         }
@@ -90,7 +90,7 @@ public class Item_manager : MonoBehaviour
                 player.transform.position.z > interactable.transform.position.z - 10 &&
                 player.transform.position.z < interactable.transform.position.z + 10)
             {
-                isNear = true;
+                interactableNear = true;
                 //set closest
                 if (closest == null)
                 {
@@ -119,22 +119,20 @@ public class Item_manager : MonoBehaviour
         //if none of the interactables were near, don't bring up the option
         if (counter == interactables.Count)
         {
-            isNear = false;
+            interactableNear = false;
         }
     }
 
     void OnGUI()
     {
-        if (isNear)
+        if (itemNear) //if the player is near an item, tell them they can pick it up
         {
-            if (isItem)
-            {
-                GUI.Box(new Rect(750, 820, 250, 50), "Press E to pickup item");
-            }
-            else //interactable
-            {
-                GUI.Box(new Rect(400, 400, 400, 400), "Press F to pickup interactable");
-            }
+            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");
+        }
+
+        if (interactableNear) //if the player is near an interactable, tell them they can pick it up
+        {
+            GUI.Box(new Rect(720, 800, 250, 50), "Press F to pickup interactable");
         }
     }
 }
