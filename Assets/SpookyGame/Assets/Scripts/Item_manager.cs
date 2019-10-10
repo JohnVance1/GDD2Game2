@@ -24,8 +24,7 @@ public class Item_manager : MonoBehaviour
     void Update()
     {
         itemCheck();
-        //uncomment when interactables are implemented
-        //interactableCheck();
+        interactableCheck();
     }
 
     void itemCheck()
@@ -127,7 +126,7 @@ public class Item_manager : MonoBehaviour
     {
         if (itemNear) //if the player is near an item, tell them they can pick it up
         {
-            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");
+            GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");
         }
 
         if (interactableNear) //if the player is near an interactable, tell them they can pick it up
