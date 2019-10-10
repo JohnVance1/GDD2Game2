@@ -14,22 +14,47 @@ public class FPSController : MonoBehaviour
     void Update()
     {
         PlayerMovement();
+        StayUp();
     }
 
     void PlayerMovement()
     {
         if(Input.GetKey(KeyCode.W))
         {
-            //gameObject.transform.Translate(
-            //    gameObject.transform.localPosition.x,
-            //    gameObject.transform.localPosition.y + 0.001f,
-            //    gameObject.transform.localPosition.z
-            //    );
             gameObject.transform.Translate(
                 0.0f,
-                0.01f,
+                0.0f,
+                0.1f
+                );
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            gameObject.transform.Translate(
+                0.0f,
+                0.0f,
+                -0.1f
+                );
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            gameObject.transform.Translate(
+                -0.1f,
+                0.0f,
                 0.0f
                 );
         }
+        if (Input.GetKey(KeyCode.D))
+        {
+            gameObject.transform.Translate(
+                0.1f,
+                0.0f,
+                0.0f
+                );
+        }
+    }
+
+    void StayUp()
+    {
+        gameObject.transform.rotation = new Quaternion(0, gameObject.transform.rotation.y, 0, gameObject.transform.rotation.w);
     }
 }
