@@ -18,6 +18,6 @@ public class AddForce : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        body.AddForce(new Vector3(0,1,0) * thrust);
+        body.AddForce(0, thrust, 0, ForceMode.Force);
     }
 }
