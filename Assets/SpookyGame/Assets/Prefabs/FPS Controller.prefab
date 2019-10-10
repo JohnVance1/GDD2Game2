@@ -222,3 +222,6 @@ MonoBehaviour:
   player: {fileID: 1230311048237940883}
   items: []
   itemsCollected: 0
+  interactables:
+  - {fileID: 0}
+  interactablesCollected: 0

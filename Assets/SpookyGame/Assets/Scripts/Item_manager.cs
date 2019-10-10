@@ -104,6 +104,12 @@ public class Item_manager : MonoBehaviour
                         closest = interactable;
                     }
                 }
+
+                if (Input.GetKey(KeyCode.F))
+                {
+                    interactable.transform.position += new Vector3(1, 0, 0);
+                    interactablesCollected++; //probably remove this later
+                }
             }
             else
             {
@@ -114,16 +120,6 @@ public class Item_manager : MonoBehaviour
         if (counter == interactables.Count)
         {
             isNear = false;
-        }
-
-        //if the player is near an interactable, let it pick it up
-        if (isNear)
-        {
-            if (Input.GetKey(KeyCode.F))
-            {
-                interactables.Remove(closest);
-                interactablesCollected++;
-            }
         }
     }
 
@@ -137,7 +133,7 @@ public class Item_manager : MonoBehaviour
             }
             else //interactable
             {
-                GUI.Box(new Rect(750, 820, 250, 50), "Press F to pickup interactable");
+                GUI.Box(new Rect(400, 400, 400, 400), "Press F to pickup interactable");
             }
         }
     }
