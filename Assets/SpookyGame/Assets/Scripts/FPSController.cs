@@ -4,53 +4,116 @@ using UnityEngine;
 
 public class FPSController : MonoBehaviour
 {
-    private float fSpeed;
-    private bool bSprint;
+    private float fMaxSpeed;
+    private float fTempSpeed;
+    private Vector3 acceleration;
+    private Vector3 velocity;
+    private float mass;
+    private float fFrictionCoeff;
 
     void Start()
     {
-        fSpeed = 0.1f;
+        fMaxSpeed = 3.0f;
+        mass = 0.1f;
+        fFrictionCoeff = 4.0f;
     }
 
     
     void Update()
     {
-        PlayerMovement();
+        CalcPlayerMovement();
+
+        velocity += acceleration * Time.deltaTime;
+        //acceleration = Vector3.zero;
+        transform.position += velocity * Time.deltaTime;
     }
 
-    void PlayerMovement() // Change this to messing with the rigidbody - adding forces rather than changing the transform
+    void ApplyForce(Vector3 force)
     {
+        acceleration += force / mass;
+    }
+
+    /// <summary>
+    /// Applies friction to the vehicle.
+    /// Acts opposite to velocity.
+    /// </summary>
+    /// <param name="coeff"></param>
+    public void ApplyFriction(float coeff)
+    {
+        Vector3 friction = velocity * -1;
+        friction.Normalize();
+        friction *= coeff;
+        acceleration += friction;
+    }
+
+    void CalcPlayerMovement() // Change this to messing with the rigidbody - adding forces rather than changing the transform
+    {
+        // If shift is pressed, make the sprint bool true
         if (Input.GetKey(KeyCode.LeftShift))
-            bSprint = true;
+            fTempSpeed = fMaxSpeed * 2;
         else
-            bSprint = false;
-        if (Input.GetKey(KeyCode.W))
+            fTempSpeed = fMaxSpeed;
+
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            if(bSprint)
-                gameObject.transform.Translate(0.0f, 0.0f, fSpeed * 2);
-            else
-                gameObject.transform.Translate(0.0f, 0.0f, fSpeed);
+            Vector3 force = gameObject.transform.forward;
+            ApplyForce(force.normalized * fTempSpeed);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            if (bSprint)
-                gameObject.transform.Translate(0.0f, 0.0f, -fSpeed * 2);
-            else
-                gameObject.transform.Translate(0.0f, 0.0f, -fSpeed);
+            Vector3 force = gameObject.transform.forward;
+            ApplyForce(force.normalized * -fTempSpeed);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            if (bSprint)
-                gameObject.transform.Translate(-fSpeed * 2, 0.0f, 0.0f);
-            else
-                gameObject.transform.Translate(-fSpeed, 0.0f, 0.0f);
+            Vector3 force = gameObject.transform.right;
+            ApplyForce(force.normalized * -fTempSpeed);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            if (bSprint)
-                gameObject.transform.Translate(fSpeed * 2, 0.0f, 0.0f);
-            else
-                gameObject.transform.Translate(fSpeed, 0.0f, 0.0f);
+            Vector3 force = gameObject.transform.right;
+            ApplyForce(force.normalized * fTempSpeed);
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            velocity.z = 0;
+            acceleration.z = 0;
+            if(Input.GetKey(KeyCode.S))
+            {
+                Vector3 force = gameObject.transform.forward;
+                ApplyForce(force.normalized * -fTempSpeed);
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            velocity.z = 0;
+            acceleration.z = 0;
+            if(Input.GetKey(KeyCode.W))
+            {
+                Vector3 force = gameObject.transform.forward;
+                ApplyForce(force.normalized * fTempSpeed);
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            velocity.x = 0;
+            acceleration.x = 0;
+            if(Input.GetKey(KeyCode.D))
+            {
+                Vector3 force = gameObject.transform.right;
+                ApplyForce(force.normalized * fTempSpeed);
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            velocity.x = 0;
+            acceleration.x = 0;
+            if(Input.GetKey(KeyCode.A))
+            {
+                Vector3 force = gameObject.transform.right;
+                ApplyForce(force.normalized * -fTempSpeed);
+            }
         }
     }
 }
