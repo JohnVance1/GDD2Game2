@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class FPSController : MonoBehaviour
 {
+    private float fSpeed;
 
     void Start()
     {
-        
+        fSpeed = 0.1f;
     }
 
     
@@ -21,35 +22,31 @@ public class FPSController : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.Translate(
-                0.0f,
-                0.0f,
-                0.1f
-                );
+            if(Input.GetKey(KeyCode.LeftShift))
+                gameObject.transform.Translate(0.0f, 0.0f, fSpeed * 2);
+            else
+                gameObject.transform.Translate(0.0f, 0.0f, fSpeed);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.Translate(
-                0.0f,
-                0.0f,
-                -0.1f
-                );
+            if (Input.GetKey(KeyCode.LeftShift))
+                gameObject.transform.Translate(0.0f, 0.0f, -fSpeed * 2);
+            else
+                gameObject.transform.Translate(0.0f, 0.0f, -fSpeed);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.Translate(
-                -0.1f,
-                0.0f,
-                0.0f
-                );
+            if (Input.GetKey(KeyCode.LeftShift))
+                gameObject.transform.Translate(-fSpeed * 2, 0.0f, 0.0f);
+            else
+                gameObject.transform.Translate(-fSpeed, 0.0f, 0.0f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.Translate(
-                0.1f,
-                0.0f,
-                0.0f
-                );
+            if (Input.GetKey(KeyCode.LeftShift))
+                gameObject.transform.Translate(fSpeed * 2, 0.0f, 0.0f);
+            else
+                gameObject.transform.Translate(fSpeed, 0.0f, 0.0f);
         }
     }
 
