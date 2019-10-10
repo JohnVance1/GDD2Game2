@@ -134,7 +134,7 @@ public class Item_manager : MonoBehaviour
             }
             else //interactable
             {
-                GUI.Box(new Rect(750, 820, 250, 50), "Press E to pickup item");
+                GUI.Box(new Rect(750, 820, 250, 50), "Press F to pickup interactable");
             }
         }
     }
