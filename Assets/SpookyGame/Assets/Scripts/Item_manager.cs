@@ -7,6 +7,8 @@ public class Item_manager : MonoBehaviour
     public GameObject player;
     public List<GameObject> items;
     public int itemsCollected;
+    public List<GameObject> interactables;
+    public int interactablesCollected;
 
     private bool isNear = false;
     private GameObject closest;
@@ -20,26 +22,32 @@ public class Item_manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        itemCheck();
+        interactableCheck();
+    }
+
+    void itemCheck()
+    {
         int counter = 0;
         //if player is near an item, allow them to collect it
-        foreach(GameObject item in items)
+        foreach (GameObject item in items)
         {
             //player is within a certain radius of item
-            if(player.transform.position.x > item.transform.position.x - 10 &&
+            if (player.transform.position.x > item.transform.position.x - 10 &&
                 player.transform.position.x < item.transform.position.x + 10 &&
                 player.transform.position.z > item.transform.position.z - 10 &&
                 player.transform.position.z < item.transform.position.z + 10)
             {
                 isNear = true;
                 //set closest
-                if(closest == null)
+                if (closest == null)
                 {
                     closest = item;
                 }
-                else if(closest != null || closest != item)
+                else if (closest != null || closest != item)
                 {
                     //if this item is closer
-                    if(Vector3.Distance(player.transform.position, item.transform.position) < Vector3.Distance(player.transform.position, closest.transform.position))
+                    if (Vector3.Distance(player.transform.position, item.transform.position) < Vector3.Distance(player.transform.position, closest.transform.position))
                     {
                         closest = item;
                     }
@@ -51,7 +59,7 @@ public class Item_manager : MonoBehaviour
             }
         }
         //if none of the items were near, don't bring up the option
-        if(counter == items.Count)
+        if (counter == items.Count)
         {
             isNear = false;
         }
@@ -67,11 +75,67 @@ public class Item_manager : MonoBehaviour
         }
     }
 
+    void interactableCheck()
+    {
+        int counter = 0;
+        //if player is near an interactable, allow them to collect it
+        foreach (GameObject interactable in interactables)
+        {
+            //player is within a certain radius of interactable
+            if (player.transform.position.x > interactable.transform.position.x - 10 &&
+                player.transform.position.x < interactable.transform.position.x + 10 &&
+                player.transform.position.z > interactable.transform.position.z - 10 &&
+                player.transform.position.z < interactable.transform.position.z + 10)
+            {
+                isNear = true;
+                //set closest
+                if (closest == null)
+                {
+                    closest = interactable;
+                }
+                else if (closest != null || closest != interactable)
+                {
+                    //if this interactable is closer
+                    if (Vector3.Distance(player.transform.position, interactable.transform.position) < Vector3.Distance(player.transform.position, closest.transform.position))
+                    {
+                        closest = interactable;
+                    }
+                }
+            }
+            else
+            {
+                counter++;
+            }
+        }
+        //if none of the interactables were near, don't bring up the option
+        if (counter == interactables.Count)
+        {
+            isNear = false;
+        }
+
+        //if the player is near an interactable, let it pick it up
+        if (isNear)
+        {
+            if (Input.GetKey(KeyCode.F))
+            {
+                interactables.Remove(closest);
+                interactablesCollected++;
+            }
+        }
+    }
+
     void OnGUI()
     {
         if (isNear)
         {
-            GUI.Box(new Rect(750, 820, 250, 50), "Press E to pickup item");
+            if (closest == item)
+            {
+                GUI.Box(new Rect(750, 820, 250, 50), "Press E to pickup item");
+            }
+            else //interactable
+            {
+                GUI.Box(new Rect(750, 820, 250, 50), "Press E to pickup item");
+            }
         }
     }
 }
