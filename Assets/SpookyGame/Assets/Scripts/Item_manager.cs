@@ -11,6 +11,7 @@ public class Item_manager : MonoBehaviour
     public int interactablesCollected;
 
     private bool isNear = false;
+    private bool isItem = false;
     private GameObject closest;
 
     // Start is called before the first frame update
@@ -43,6 +44,7 @@ public class Item_manager : MonoBehaviour
                 if (closest == null)
                 {
                     closest = item;
+                    isItem = true;
                 }
                 else if (closest != null || closest != item)
                 {
@@ -50,6 +52,7 @@ public class Item_manager : MonoBehaviour
                     if (Vector3.Distance(player.transform.position, item.transform.position) < Vector3.Distance(player.transform.position, closest.transform.position))
                     {
                         closest = item;
+                        isItem = true;
                     }
                 }
             }
@@ -128,7 +131,7 @@ public class Item_manager : MonoBehaviour
     {
         if (isNear)
         {
-            if (closest == item)
+            if (isItem)
             {
                 GUI.Box(new Rect(750, 820, 250, 50), "Press E to pickup item");
             }
