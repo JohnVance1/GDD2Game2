@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/SpookyGame/Assets/Physics/Prefabs.meta
 guid: db1225d91a44d5741928867ca648fe66
+=======
+guid: 5e3a694e33b4d7a46b84db17c97cdb98
+>>>>>>> 5bdc92a898eb1173df73d70986d21c8a7dc4f76d:Assets/SpookyGame/Assets/Prefabs.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

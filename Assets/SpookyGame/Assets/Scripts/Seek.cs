@@ -4,33 +4,47 @@ using UnityEngine;
 
 public class Seek : MonoBehaviour
 {
-    GameObject target;
-    GameObject seeker;
-    float Tx;
-    float Ty;
-    float Tz;
-    float Sx;
-    float Sy;
-    float Sz;
+    public GameObject target;
+    public GameObject seeker;
+    Rigidbody sBody;
+    Vector3 TPos;
+    
+    Vector3 SPos;
+
+    Vector3 velocity;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        Tx = target.transform.position.x;
-        Ty = target.transform.position.y;
-        Tz = target.transform.position.z;
+        TPos = target.transform.position;
+        
+        SPos = seeker.transform.position;
 
-        Sx = seeker.transform.position.x;
-        Sy = seeker.transform.position.y;
-        Sz = seeker.transform.position.z;
+        velocity = seeker.GetComponent<Rigidbody>().velocity;
+
+        sBody = seeker.GetComponent<Rigidbody>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        TPos = target.transform.position;
 
-        
+        SPos = seeker.transform.position;
+
+        Vector3 vecVelocity = SPos - TPos;
+
+        vecVelocity.Normalize();
+
+        vecVelocity -= velocity;
+
+        vecVelocity *= -1;
+
+        sBody.AddForce(vecVelocity);
+
+
     }
+
 }
