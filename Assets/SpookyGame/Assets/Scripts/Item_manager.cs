@@ -105,9 +105,9 @@ public class Item_manager : MonoBehaviour
                     }
                 }
 
-                if (Input.GetKey(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.F))
                 {
-                    interactable.transform.position += new Vector3(1, 0, 0);
+                    interactable.transform.position += new Vector3(3, 0, 0);
                     interactablesCollected++; //probably remove this later
                 }
             }
@@ -130,9 +130,9 @@ public class Item_manager : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");
         }
 
-        if (interactableNear) //if the player is near an interactable, tell them they can pick it up
+        else if (interactableNear) //if the player is near an interactable, tell them they can pick it up
         {
-            GUI.Box(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 60, 250, 50), "Press F to pickup interactable");
+            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 60, 250, 50), "Press F to interact with environment object");
         }
     }
 }

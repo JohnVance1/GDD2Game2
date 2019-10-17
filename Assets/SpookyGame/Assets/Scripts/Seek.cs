@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Seek : MonoBehaviour
 {
+
+    [SerializeField]
+    private float thrust;
+
     public GameObject target;
     public GameObject seeker;
     Rigidbody sBody;
@@ -31,6 +35,7 @@ public class Seek : MonoBehaviour
     void Update()
     {
         TPos = target.transform.position;
+        TPos.y += 1.5f;
 
         SPos = seeker.transform.position;
 
@@ -40,7 +45,7 @@ public class Seek : MonoBehaviour
 
         vecVelocity -= velocity;
 
-        vecVelocity *= -1;
+        vecVelocity *= -1 * thrust;
 
         sBody.AddForce(vecVelocity);
 
