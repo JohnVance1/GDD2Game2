@@ -20,7 +20,7 @@ public class Spinning : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = target.transform.position - transform.position;
+        Vector3 direction = Seek.direction;
         direction.Normalize();
         body.AddTorque(new Vector3(direction.z * strength, 0, -direction.x * strength));
     }

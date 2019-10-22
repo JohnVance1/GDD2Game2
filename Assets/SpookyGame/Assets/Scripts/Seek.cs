@@ -5,6 +5,8 @@ using UnityEngine;
 public class Seek : MonoBehaviour
 {
 
+    public static Vector3 direction;
+
     [SerializeField]
     private float thrust;
 
@@ -46,6 +48,8 @@ public class Seek : MonoBehaviour
         vecVelocity -= velocity;
 
         vecVelocity *= -1 * thrust;
+
+        direction = vecVelocity;
 
         sBody.AddForce(vecVelocity);
 
