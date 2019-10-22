@@ -18,7 +18,9 @@ public class Seek : MonoBehaviour
     Vector3 SPos;
 
     Vector3 velocity;
-    
+
+    float timer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,8 @@ public class Seek : MonoBehaviour
         velocity = seeker.GetComponent<Rigidbody>().velocity;
 
         sBody = seeker.GetComponent<Rigidbody>();
+
+        timer = 3.0f;
 
     }
 
@@ -43,6 +47,14 @@ public class Seek : MonoBehaviour
 
         Vector3 vecVelocity = SPos - TPos;
 
+        if(timer <= 0)
+        {
+            vecVelocity += Jump(vecVelocity);
+            timer = 3.0f;
+        }
+
+        timer -= Time.deltaTime;
+
         vecVelocity.Normalize();
 
         vecVelocity -= velocity;
@@ -53,6 +65,21 @@ public class Seek : MonoBehaviour
 
         sBody.AddForce(vecVelocity);
 
+
+    }
+
+    Vector3 Jump(Vector3 currentV)
+    {
+        Vector3 jump;
+        Quaternion jumpQuat;
+
+        jump = currentV.normalized;
+
+        jumpQuat = Quaternion.AngleAxis(45, Vector3.up);
+
+        jump  = jumpQuat * jump;
+
+        return jump;
 
     }
 

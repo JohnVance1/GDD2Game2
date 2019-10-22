@@ -11,13 +11,15 @@ public class Item_manager : MonoBehaviour
     public int interactablesCollected;
 
     private bool itemNear = false;
+    private bool lookingAtItem = false;
     private bool interactableNear = false;
+    private float distance;
     private GameObject closest;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        distance = 2.0f;
     }
 
     // Update is called once per frame
@@ -35,12 +37,27 @@ public class Item_manager : MonoBehaviour
         foreach (GameObject item in items)
         {
             //player is within a certain radius of item
-            if (player.transform.position.x > item.transform.position.x - 10 &&
-                player.transform.position.x < item.transform.position.x + 10 &&
-                player.transform.position.z > item.transform.position.z - 10 &&
-                player.transform.position.z < item.transform.position.z + 10)
+            if (player.transform.position.x > item.transform.position.x - distance &&
+                player.transform.position.x < item.transform.position.x + distance &&
+                player.transform.position.z > item.transform.position.z - distance &&
+                player.transform.position.z < item.transform.position.z + distance)
             {
                 itemNear = true;
+
+                //raycasting to see if the player is looking at the object
+                RaycastHit hit;
+                if(Physics.Raycast(this.transform.position, Camera.current.transform.forward, out hit))
+                {
+                    if(hit.collider.tag == "Item")
+                    {
+                        lookingAtItem = true;
+                    }
+                }
+                else
+                {
+                    lookingAtItem = false;
+                }
+
                 //set closest
                 if (closest == null)
                 {
@@ -67,7 +84,7 @@ public class Item_manager : MonoBehaviour
         }
 
         //if the player is near an item, let it pick it up
-        if (itemNear)
+        if (itemNear && lookingAtItem)
         {
             if (Input.GetKey(KeyCode.E))
             {
@@ -85,10 +102,10 @@ public class Item_manager : MonoBehaviour
         foreach (GameObject interactable in interactables)
         {
             //player is within a certain radius of interactable
-            if (player.transform.position.x > interactable.transform.position.x - 10 &&
-                player.transform.position.x < interactable.transform.position.x + 10 &&
-                player.transform.position.z > interactable.transform.position.z - 10 &&
-                player.transform.position.z < interactable.transform.position.z + 10)
+            if (player.transform.position.x > interactable.transform.position.x - distance &&
+                player.transform.position.x < interactable.transform.position.x + distance &&
+                player.transform.position.z > interactable.transform.position.z - distance &&
+                player.transform.position.z < interactable.transform.position.z + distance)
             {
                 interactableNear = true;
                 //set closest
@@ -125,7 +142,7 @@ public class Item_manager : MonoBehaviour
 
     void OnGUI()
     {
-        if (itemNear) //if the player is near an item, tell them they can pick it up
+        if (itemNear && lookingAtItem) //if the player is near an item, tell them they can pick it up
         {
             GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");
         }
