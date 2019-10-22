@@ -23,7 +23,7 @@ public class ObstacleAvoidance : MonoBehaviour
         
     }
 
-
+    /*
     /// <summary>
     /// 
     /// </summary>
@@ -73,6 +73,6 @@ public class ObstacleAvoidance : MonoBehaviour
         Debug.DrawLine(transform.position, transform.position + desiredVelocity * 10, Color.red);
 
         return desiredVelocity - velocity;
-    }
+    } */
 
 }
