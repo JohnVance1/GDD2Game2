@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Fire
   - Skeleton
-  - Obstacle
+  - Item
   layers:
   - Default
   - TransparentFX
