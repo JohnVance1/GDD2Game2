@@ -7,38 +7,46 @@ public class ObstacleAvoidance : MonoBehaviour
     // ********************* use the Obstacle tag to find obstacles to avoid
 
 
-    GameObject[] goObstacles = GameObject.FindGameObjectsWithTag("Obstace");
+    GameObject[] goObstacles = GameObject.FindGameObjectsWithTag("Obstacle");
     public GameObject goVehicle;
-    Rigidbody vBody;
     Vector3 v3VehiclePos;
     Vector3 v3Velocity;
+    public float thisRadius;
+    public float obstacleRadius;
+    public float safeDistance;
+    public float thrust;
 
     void Start()
     {
-        
+        v3VehiclePos = goVehicle.GetComponent<Rigidbody>().position;
+        v3VehiclePos = goVehicle.GetComponent<Rigidbody>().velocity;
     }
 
     void Update()
     {
-        
+        foreach(GameObject obstacle in goObstacles)
+        {
+            goVehicle.GetComponent<Rigidbody>().AddForce(AvoidObstacle(obstacle));
+        }
     }
 
-    /*
+
+
     /// <summary>
-    /// 
+    /// Returns a force away from incoming obstacles.
     /// </summary>
     /// <param name="obstacle"></param>
     /// <returns>Returns the force needed to avoid an obstacle.</returns>
     protected Vector3 AvoidObstacle(GameObject obstacle)
     {
         // Vector to obstacle
-        Vector3 vecToCenter = obstacle.transform.position - vehiclePosition;
+        Vector3 vecToCenter = obstacle.transform.position - v3VehiclePos;
         // dot product to forward
         float dotForward = Vector3.Dot(vecToCenter, transform.forward);
         // dot product to right
         float dotRight = Vector3.Dot(vecToCenter, transform.right);
         // radii sum
-        float radiiSum = obstacle.GetComponent<Obstacle>().radius + radius;
+        float radiiSum = thisRadius + obstacleRadius;
 
         // Step 1: what is behind? If so, return an empty force.
         if (dotForward < 0)
@@ -62,17 +70,14 @@ public class ObstacleAvoidance : MonoBehaviour
         Vector3 desiredVelocity = Vector3.zero;
         if (dotRight >= 0) // If right, dodge left.
         {
-            desiredVelocity = -transform.right * maxSpeed;
+            desiredVelocity = -transform.right * thrust;
         }
         else // If left, dodge right.
         {
-            desiredVelocity = transform.right * maxSpeed;
+            desiredVelocity = transform.right * thrust;
         }
 
-        Debug.DrawLine(transform.position, obstacle.transform.position, Color.green);
-        Debug.DrawLine(transform.position, transform.position + desiredVelocity * 10, Color.red);
-
-        return desiredVelocity - velocity;
-    } */
+        return desiredVelocity - v3Velocity;
+    }
 
 }
