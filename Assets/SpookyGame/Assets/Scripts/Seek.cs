@@ -12,6 +12,8 @@ public class Seek : MonoBehaviour
 
     public GameObject target;
     public GameObject seeker;
+    private GameObject UI;
+
     Rigidbody sBody;
     Vector3 TPos;
     
@@ -35,6 +37,7 @@ public class Seek : MonoBehaviour
 
         timer = 10.0f;
 
+        UI = GameObject.Find("UI_Manager");
     }
 
     // Update is called once per frame
@@ -47,15 +50,12 @@ public class Seek : MonoBehaviour
 
         Vector3 vecVelocity = SPos - TPos;
 
-        
         Debug.Log(timer);
 
         timer -= Time.deltaTime;
 
         vecVelocity.Normalize();
-
         vecVelocity -= velocity;
-
         vecVelocity *= -1 * thrust;
 
         direction = vecVelocity;
@@ -68,11 +68,10 @@ public class Seek : MonoBehaviour
             timer = 10.0f;
         }
 
-        sBody.AddForce(vecVelocity);
-
-
+        // If the pause menu is active, do NOT stack forces or else them boney boys be real goofy. The force stacks while paused.
+        if(!UI.GetComponent<GameManager>().GetPauseEnabled())
+        {
+            sBody.AddForce(vecVelocity);
+        } 
     }
-
- 
-
 }
