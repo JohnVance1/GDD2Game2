@@ -13,6 +13,7 @@ public class Item_manager : MonoBehaviour
     private bool itemNear = false;
     private bool lookingAtItem = false;
     private bool interactableNear = false;
+    private bool lookingAtInteractable = false;
     private float distance;
     private GameObject closest;
 
@@ -108,6 +109,21 @@ public class Item_manager : MonoBehaviour
                 player.transform.position.z < interactable.transform.position.z + distance)
             {
                 interactableNear = true;
+
+                //raycasting to see if the player is looking at the object
+                RaycastHit hit;
+                if (Physics.Raycast(this.transform.position, Camera.current.transform.forward, out hit))
+                {
+                    if (hit.collider.tag == "Interactable")
+                    {
+                        lookingAtInteractable = true;
+                    }
+                }
+                else
+                {
+                    lookingAtInteractable = false;
+                }
+
                 //set closest
                 if (closest == null)
                 {
@@ -122,7 +138,7 @@ public class Item_manager : MonoBehaviour
                     }
                 }
 
-                if (Input.GetKeyDown(KeyCode.F))
+                if (lookingAtInteractable && Input.GetKeyDown(KeyCode.F))
                 {
                     interactable.transform.position += new Vector3(3, 0, 0);
                     interactablesCollected++; //probably remove this later
@@ -147,7 +163,7 @@ public class Item_manager : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");
         }
 
-        else if (interactableNear) //if the player is near an interactable, tell them they can pick it up
+        else if (interactableNear && lookingAtInteractable) //if the player is near an interactable, tell them they can pick it up
         {
             GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 60, 250, 50), "Press F to interact with environment object");
         }
