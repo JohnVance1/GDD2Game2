@@ -33,7 +33,7 @@ public class Seek : MonoBehaviour
 
         sBody = seeker.GetComponent<Rigidbody>();
 
-        timer = 3.0f;
+        timer = 10.0f;
 
     }
 
@@ -47,11 +47,8 @@ public class Seek : MonoBehaviour
 
         Vector3 vecVelocity = SPos - TPos;
 
-        if(timer <= 0)
-        {
-            vecVelocity += Jump(vecVelocity);
-            timer = 3.0f;
-        }
+        
+        Debug.Log(timer);
 
         timer -= Time.deltaTime;
 
@@ -63,24 +60,19 @@ public class Seek : MonoBehaviour
 
         direction = vecVelocity;
 
+        if (timer <= 0)
+        {
+            vecVelocity.y = 1;
+            vecVelocity.y *= 7500;
+
+            timer = 10.0f;
+        }
+
         sBody.AddForce(vecVelocity);
 
 
     }
 
-    Vector3 Jump(Vector3 currentV)
-    {
-        Vector3 jump;
-        Quaternion jumpQuat;
-
-        jump = currentV.normalized;
-
-        jumpQuat = Quaternion.AngleAxis(45, Vector3.up);
-
-        jump  = jumpQuat * jump;
-
-        return jump;
-
-    }
+ 
 
 }
