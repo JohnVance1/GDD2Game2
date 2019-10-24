@@ -47,7 +47,7 @@ public class Item_manager : MonoBehaviour
 
                 //raycasting to see if the player is looking at the object
                 RaycastHit hit;
-                if(Physics.Raycast(this.transform.position, Camera.current.transform.forward, out hit))
+                if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit))
                 {
                     if(hit.collider.tag == "Item")
                     {
@@ -112,7 +112,7 @@ public class Item_manager : MonoBehaviour
 
                 //raycasting to see if the player is looking at the object
                 RaycastHit hit;
-                if (Physics.Raycast(this.transform.position, Camera.current.transform.forward, out hit))
+                if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit))
                 {
                     if (hit.collider.tag == "Interactable")
                     {

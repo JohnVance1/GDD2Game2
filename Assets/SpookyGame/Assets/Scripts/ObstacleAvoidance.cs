@@ -7,7 +7,7 @@ public class ObstacleAvoidance : MonoBehaviour
     // ********************* use the Obstacle tag to find obstacles to avoid
 
 
-    GameObject[] goObstacles = GameObject.FindGameObjectsWithTag("Obstacle");
+    GameObject[] goObstacles;
     public GameObject goVehicle;
     Vector3 v3VehiclePos;
     Vector3 v3Velocity;
@@ -18,6 +18,7 @@ public class ObstacleAvoidance : MonoBehaviour
 
     void Start()
     {
+        goObstacles = GameObject.FindGameObjectsWithTag("Obstacle");
         v3VehiclePos = goVehicle.GetComponent<Rigidbody>().position;
         v3VehiclePos = goVehicle.GetComponent<Rigidbody>().velocity;
     }
