@@ -11,10 +11,14 @@ public class Spinning : MonoBehaviour
     
     Rigidbody body;
 
+    private GameObject UI;
+
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody>();
+
+        UI = GameObject.Find("UI_Manager");
     }
 
     // Update is called once per frame
@@ -22,6 +26,12 @@ public class Spinning : MonoBehaviour
     {
         Vector3 direction = Seek.direction;
         direction.Normalize();
-        body.AddTorque(new Vector3(direction.z * strength, 0, -direction.x * strength));
+
+
+        // If the pause menu is active, do NOT stack forces or else them boney boys be real goofy. The force stacks while paused.
+        if (!UI.GetComponent<GameManager>().GetPauseEnabled())
+        {
+            body.AddTorque(new Vector3(direction.z * strength, 0, -direction.x * strength));
+        }
     }
 }

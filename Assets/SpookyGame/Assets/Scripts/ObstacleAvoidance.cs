@@ -6,9 +6,10 @@ public class ObstacleAvoidance : MonoBehaviour
 {
     // ********************* use the Obstacle tag to find obstacles to avoid
 
+    private GameObject UI;
 
     GameObject[] goObstacles;
-    public GameObject goVehicle;
+    GameObject goVehicle;
     Vector3 v3VehiclePos;
     Vector3 v3Velocity;
     public float thisRadius;
@@ -18,16 +19,21 @@ public class ObstacleAvoidance : MonoBehaviour
 
     void Start()
     {
+        goVehicle = gameObject;
         goObstacles = GameObject.FindGameObjectsWithTag("Obstacle");
         v3VehiclePos = goVehicle.GetComponent<Rigidbody>().position;
         v3VehiclePos = goVehicle.GetComponent<Rigidbody>().velocity;
+        UI = GameObject.Find("UI_Manager");
     }
 
     void Update()
     {
-        foreach(GameObject obstacle in goObstacles)
+        if (!UI.GetComponent<GameManager>().GetPauseEnabled())
         {
-            goVehicle.GetComponent<Rigidbody>().AddForce(AvoidObstacle(obstacle));
+            foreach (GameObject obstacle in goObstacles)
+            {
+                goVehicle.GetComponent<Rigidbody>().AddForce(AvoidObstacle(obstacle));
+            }
         }
     }
 
