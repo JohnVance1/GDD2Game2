@@ -9,15 +9,20 @@ public class Seek : MonoBehaviour
 
     [SerializeField]
     private float thrust;
+    [SerializeField]
+    private bool aggro;
 
     public GameObject target;
     public GameObject seeker;
+    public GameObject parentSeeker;
     private GameObject UI;
 
     Rigidbody sBody;
     Vector3 TPos;
     
     Vector3 SPos;
+
+    Vector3 PSPos;
 
     Vector3 velocity;
 
@@ -31,12 +36,16 @@ public class Seek : MonoBehaviour
         
         SPos = seeker.transform.position;
 
+        PSPos = parentSeeker.transform.position;
+
         velocity = seeker.GetComponent<Rigidbody>().velocity;
 
         sBody = seeker.GetComponent<Rigidbody>();
 
         timer = 10.0f;
         dist = 1000;
+
+        aggro = false;
 
         UI = GameObject.Find("UI_Manager");
     }
@@ -52,14 +61,18 @@ public class Seek : MonoBehaviour
 
         if (dist <= 30)
         {
-            TPos.y += 1.5f;
+            aggro = true;
+        }
 
+        if (aggro)
+        {
+            TPos.y += 1.5f;
 
             Vector3 vecVelocity = SPos - TPos;
 
-        Debug.Log(timer);
+            Debug.Log(timer);
 
-        timer -= Time.deltaTime;
+            timer -= Time.deltaTime;
 
             vecVelocity.Normalize();
 
@@ -67,7 +80,6 @@ public class Seek : MonoBehaviour
 
             vecVelocity *= -1 * thrust;
 
-            direction = vecVelocity;
 
             if (timer <= 0)
             {
@@ -77,14 +89,13 @@ public class Seek : MonoBehaviour
                 timer = 10.0f;
             }
 
-        // If the pause menu is active, do NOT stack forces or else them boney boys be real goofy. The force stacks while paused.
-        if(!UI.GetComponent<GameManager>().GetPauseEnabled())
-        {
-            sBody.AddForce(vecVelocity);
-        } 
-    }
-            sBody.AddForce(vecVelocity);
-        }
+            // If the pause menu is active, do NOT stack forces or else them boney boys be real goofy. The force stacks while paused.
+            if(!UI.GetComponent<GameManager>().GetPauseEnabled())
+            {
+                sBody.AddForce(vecVelocity);
+            } 
+    
+        }        
 
     }
 
