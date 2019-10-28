@@ -8,6 +8,7 @@ TagManager:
   - Skeleton
   - Item
   - Interactable
+  - Obstacle
   layers:
   - Default
   - TransparentFX

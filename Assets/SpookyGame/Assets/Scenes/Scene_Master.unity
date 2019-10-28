@@ -461,6 +461,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!1 &315961085 stripped
@@ -735,6 +755,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!4 &511771467 stripped
@@ -815,6 +855,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 627739049978319893, guid: 28151bb0265dd1c4696cc7320c549371,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 627739051231452495, guid: 28151bb0265dd1c4696cc7320c549371,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 627739051413100279, guid: 28151bb0265dd1c4696cc7320c549371,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28151bb0265dd1c4696cc7320c549371, type: 3}
@@ -1286,6 +1341,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!4 &839088094 stripped
@@ -1566,6 +1641,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!1001 &1007838188
@@ -1833,6 +1928,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
@@ -2148,6 +2263,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!1 &1282432850 stripped
@@ -2428,6 +2563,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!1001 &1513899788
@@ -2696,6 +2851,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!1001 &1721222190
@@ -2793,6 +2968,10 @@ PrefabInstance:
       propertyPath: items.Array.data[3]
       value: 
       objectReference: {fileID: 1352785439}
+    - target: {fileID: 11400004, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: advancedSettings.airControl
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1001 &1758105594
@@ -3060,6 +3239,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
@@ -3358,6 +3557,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thrust
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: safeDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: obstacleRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827556161462249861, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: thisRadius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}

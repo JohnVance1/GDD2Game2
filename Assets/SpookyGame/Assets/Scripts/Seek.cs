@@ -20,7 +20,7 @@ public class Seek : MonoBehaviour
     Vector3 velocity;
 
     float timer;
-
+    float dist;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,7 @@ public class Seek : MonoBehaviour
         sBody = seeker.GetComponent<Rigidbody>();
 
         timer = 10.0f;
+        dist = 1000;
 
     }
 
@@ -41,38 +42,48 @@ public class Seek : MonoBehaviour
     void Update()
     {
         TPos = target.transform.position;
-        TPos.y += 1.5f;
 
         SPos = seeker.transform.position;
 
-        Vector3 vecVelocity = SPos - TPos;
+        dist = Distance(SPos, TPos);
 
-        
-        Debug.Log(timer);
-
-        timer -= Time.deltaTime;
-
-        vecVelocity.Normalize();
-
-        vecVelocity -= velocity;
-
-        vecVelocity *= -1 * thrust;
-
-        direction = vecVelocity;
-
-        if (timer <= 0)
+        if (dist <= 30)
         {
-            vecVelocity.y = 1;
-            vecVelocity.y *= 7500;
+            TPos.y += 1.5f;
 
-            timer = 10.0f;
+
+            Vector3 vecVelocity = SPos - TPos;
+
+
+            timer -= Time.deltaTime;
+
+            vecVelocity.Normalize();
+
+            vecVelocity -= velocity;
+
+            vecVelocity *= -1 * thrust;
+
+            direction = vecVelocity;
+
+            if (timer <= 0)
+            {
+                vecVelocity.y = 1;
+                vecVelocity.y *= 7500;
+
+                timer = 10.0f;
+            }
+
+            sBody.AddForce(vecVelocity);
         }
-
-        sBody.AddForce(vecVelocity);
-
 
     }
 
- 
+    float Distance(Vector3 SPos, Vector3 TPos)
+    {
+        float formula = Mathf.Sqrt((Mathf.Pow((TPos.x - SPos.x), 2) + Mathf.Pow((TPos.z - SPos.z), 2)));
+
+        return formula;
+
+    }
 
 }
