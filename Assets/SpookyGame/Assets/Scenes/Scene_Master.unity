@@ -871,6 +871,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 627739050793237607, guid: 28151bb0265dd1c4696cc7320c549371,
+        type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28151bb0265dd1c4696cc7320c549371, type: 3}
 --- !u!4 &622200008 stripped
@@ -954,7 +959,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.8942806e-24, z: 7.95e-43, w: 1.8926761e-24}
+  m_BoundingSphereOverride: {x: -3.11e-43, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2585,6 +2590,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
+--- !u!1001 &1413377313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1442264822560196859, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_Name
+      value: UI_Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.012487
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.77552855
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -85.95815
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442264822560196740, guid: a7a4993e80ef000428dc487fdde2e323,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7a4993e80ef000428dc487fdde2e323, type: 3}
 --- !u!1001 &1513899788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2888,6 +2962,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.8
@@ -2971,6 +3049,10 @@ PrefabInstance:
     - target: {fileID: 11400004, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: advancedSettings.airControl
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}

@@ -11,7 +11,7 @@ public class GameOver : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Skeleton Center") && on)
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Skeleton") && on)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
