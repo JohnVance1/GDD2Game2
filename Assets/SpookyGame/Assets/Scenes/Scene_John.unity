@@ -411,6 +411,11 @@ PrefabInstance:
       propertyPath: thisRadius
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6060369763175771308, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
 --- !u!4 &119716190 stripped
@@ -491,6 +496,81 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1001 &220282016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 295192288}
+    m_Modifications:
+    - target: {fileID: 1935652640279183386, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_Name
+      value: Point Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.07913
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00726
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490973303707746464, guid: 29c94565600ff6a4e98c6f8815457ee7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 29c94565600ff6a4e98c6f8815457ee7, type: 3}
+--- !u!4 &295192288 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2722187208670899173, guid: fba9757196290364eb1666a7d3ccb022,
+    type: 3}
+  m_PrefabInstance: {fileID: 86241846}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &304439257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1831,6 +1911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: thisRadius
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060369763175771308, guid: fba9757196290364eb1666a7d3ccb022,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba9757196290364eb1666a7d3ccb022, type: 3}
@@ -3401,6 +3486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 2
+  aggro: 0
   target: {fileID: 713816329}
   seeker: {fileID: 1358962438}
   parentSeeker: {fileID: 0}
