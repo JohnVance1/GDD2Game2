@@ -22,7 +22,7 @@ public class Seek : MonoBehaviour
     
     Vector3 SPos;
 
-    Vector3 PSPos;
+    //Vector3 PSPos;
 
     Vector3 velocity;
 
@@ -36,7 +36,7 @@ public class Seek : MonoBehaviour
         
         SPos = seeker.transform.position;
 
-        PSPos = parentSeeker.transform.position;
+        //PSPos = parentSeeker.transform.position;
 
         velocity = seeker.GetComponent<Rigidbody>().velocity;
 
