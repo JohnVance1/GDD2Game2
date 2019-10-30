@@ -32,6 +32,10 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
             {
                 SceneManager.LoadScene(1);
             }
+            else if (button == "ResumeButton")
+            {
+                GameObject.FindGameObjectWithTag("UI").GetComponent<GameManager>().TogglePauseMenu();
+            }
             else if (button == "QuitButton")
             {
                 Application.Quit();
