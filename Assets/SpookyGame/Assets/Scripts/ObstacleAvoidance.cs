@@ -9,6 +9,7 @@ public class ObstacleAvoidance : MonoBehaviour
     private GameObject UI;
 
     GameObject[] goObstacles;
+    GameObject[] goSkeletons;
     GameObject goVehicle;
     Vector3 v3VehiclePos;
     Vector3 v3Velocity;
@@ -21,18 +22,28 @@ public class ObstacleAvoidance : MonoBehaviour
     {
         goVehicle = gameObject;
         goObstacles = GameObject.FindGameObjectsWithTag("Obstacle");
+        goSkeletons = GameObject.FindGameObjectsWithTag("Skeleton");
         v3VehiclePos = goVehicle.GetComponent<Rigidbody>().position;
-        v3VehiclePos = goVehicle.GetComponent<Rigidbody>().velocity;
+        v3Velocity = goVehicle.GetComponent<Rigidbody>().velocity;
         UI = GameObject.Find("UI_Manager");
     }
 
     void Update()
     {
+        v3VehiclePos = goVehicle.GetComponent<Rigidbody>().position;
+        v3Velocity = goVehicle.GetComponent<Rigidbody>().velocity;
+
         if (!UI.GetComponent<GameManager>().GetPauseEnabled())
         {
             foreach (GameObject obstacle in goObstacles)
             {
-                goVehicle.GetComponent<Rigidbody>().AddForce(AvoidObstacle(obstacle));
+                if((obstacle.transform.position - v3VehiclePos).sqrMagnitude < safeDistance * safeDistance)
+                    goVehicle.GetComponent<Rigidbody>().AddForce(AvoidObstacle(obstacle));
+            }
+            foreach(GameObject skeleton in goSkeletons)
+            {
+                if ((skeleton.transform.position - v3VehiclePos).sqrMagnitude < safeDistance * safeDistance)
+                    goVehicle.GetComponent<Rigidbody>().AddForce(AvoidObstacle(skeleton));
             }
         }
     }
@@ -75,6 +86,7 @@ public class ObstacleAvoidance : MonoBehaviour
 
         // Step 4: calculate the dodge force.
         Vector3 desiredVelocity = Vector3.zero;
+
         if (dotRight >= 0) // If right, dodge left.
         {
             desiredVelocity = -transform.right * thrust;

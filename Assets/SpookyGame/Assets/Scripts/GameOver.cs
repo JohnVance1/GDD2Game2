@@ -13,7 +13,7 @@ public class GameOver : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Skeleton") && on)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(3);
         }
     }
 
