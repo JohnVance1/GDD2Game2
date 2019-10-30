@@ -215,7 +215,7 @@ MonoBehaviour:
     max: 1
   maxFogDistance:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: 150
     min: 0
   mipFogMaxMip:
     m_OverrideState: 1
@@ -238,14 +238,14 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 10
     min: 1
   baseHeight:
     m_OverrideState: 1
     m_Value: 0
   meanHeight:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 10
   anisotropy:
     m_OverrideState: 1
     m_Value: 0.47
