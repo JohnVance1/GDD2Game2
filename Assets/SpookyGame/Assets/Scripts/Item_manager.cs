@@ -7,7 +7,7 @@ public class Item_manager : MonoBehaviour
     public GameObject player;
     public int itemsCollected;
     public List<GameObject> interactables;
-    public int interactablesCollected;
+    public bool sendToGate;
 
     private List<GameObject> itemList = new List<GameObject>();
     private GameObject[] items;
@@ -145,8 +145,16 @@ public class Item_manager : MonoBehaviour
 
                 if (lookingAtInteractable && Input.GetKeyDown(KeyCode.F))
                 {
-                    interactable.transform.position += new Vector3(3, 0, 0);
-                    interactablesCollected++; //probably remove this later
+                    if(sendToGate)
+                    {
+                        interactable.transform.position += new Vector3(0, 0, 3);
+                        sendToGate = false;
+                    }
+                    else
+                    {
+                        interactable.transform.position -= new Vector3(0, 0, 3);
+                        sendToGate = true;
+                    }
                 }
             }
             else
