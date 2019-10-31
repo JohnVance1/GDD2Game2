@@ -49,7 +49,7 @@ public class Seek : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         TPos = target.transform.position;
 

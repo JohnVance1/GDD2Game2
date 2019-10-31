@@ -22,7 +22,7 @@ public class Spinning : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 direction = Seek.direction;
         direction.Normalize();

@@ -51,7 +51,7 @@ public class PickupLights : MonoBehaviour
 
         else
         {
-            light.intensity = (1 / dist) * 10;
+            light.intensity = (1 / dist) * 7 + 3;
 
         }
 
