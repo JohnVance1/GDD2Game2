@@ -5,11 +5,12 @@ using UnityEngine;
 public class Item_manager : MonoBehaviour
 {
     public GameObject player;
-    public List<GameObject> items;
     public int itemsCollected;
     public List<GameObject> interactables;
     public int interactablesCollected;
 
+    private List<GameObject> itemList = new List<GameObject>();
+    private GameObject[] items;
     private bool itemNear = false;
     private bool lookingAtItem = false;
     private bool interactableNear = false;
@@ -21,13 +22,17 @@ public class Item_manager : MonoBehaviour
     void Start()
     {
         distance = 2.0f;
+        items = GameObject.FindGameObjectsWithTag("Item");
+        foreach(GameObject item in items)
+        {
+            itemList.Add(item);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         itemCheck();
-        //uncomment when interactables are implemented
         interactableCheck();
     }
 
@@ -35,7 +40,7 @@ public class Item_manager : MonoBehaviour
     {
         int counter = 0;
         //if player is near an item, allow them to collect it
-        foreach (GameObject item in items)
+        foreach (GameObject item in itemList)
         {
             //player is within a certain radius of item
             if (player.transform.position.x > item.transform.position.x - distance &&
@@ -79,7 +84,7 @@ public class Item_manager : MonoBehaviour
             }
         }
         //if none of the items were near, don't bring up the option
-        if (counter == items.Count)
+        if (counter == itemList.Count)
         {
             itemNear = false;
         }
@@ -89,7 +94,7 @@ public class Item_manager : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                items.Remove(closest);
+                itemList.Remove(closest);
                 Destroy(closest);
                 itemsCollected++;
             }
@@ -158,6 +163,9 @@ public class Item_manager : MonoBehaviour
 
     void OnGUI()
     {
+        //display current progress
+        GUI.Label(new Rect(10, 5, 250, 50), "Collected: " + itemsCollected + "/" + items.Length);
+
         if (itemNear && lookingAtItem) //if the player is near an item, tell them they can pick it up
         {
             GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");

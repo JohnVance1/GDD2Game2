@@ -19,7 +19,7 @@ public class TerrainGeneration : MonoBehaviour
     void Start () 
 	{
 		myTerrainData = gameObject.GetComponent<TerrainCollider> ().terrainData;
-		worldSize = new Vector3 (100, 10, 200);
+		worldSize = new Vector3 (100, 10, 140);
 		myTerrainData.size = worldSize;
 		myTerrainData.heightmapResolution = resolution;
 		heightArray = new float[resolution, resolution];
