@@ -27,35 +27,35 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                if (Input.GetMouseButtonUp(0))
+                //if (Input.GetMouseButtonUp(0))
                     SceneManager.LoadScene(2);
             }
             else if (button == "MenuButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                if (Input.GetMouseButtonUp(0))
+                //if (Input.GetMouseButtonUp(0))
                     SceneManager.LoadScene(0);
             }
             else if (button == "CreditsButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                if (Input.GetMouseButtonUp(0))
+                //if (Input.GetMouseButtonUp(0))
                     SceneManager.LoadScene(1);
             }
             else if (button == "ResumeButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                if (Input.GetMouseButtonUp(0))
+                //if (Input.GetMouseButtonUp(0))
                     GameObject.FindGameObjectWithTag("UI").GetComponent<GameManager>().TogglePauseMenu();
             }
             else if (button == "QuitButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                if (Input.GetMouseButtonUp(0))
+                //if (Input.GetMouseButtonUp(0))
                     Application.Quit();
             }
         }
