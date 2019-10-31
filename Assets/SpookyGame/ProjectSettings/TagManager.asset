@@ -9,6 +9,8 @@ TagManager:
   - Item
   - Interactable
   - Obstacle
+  - UI
+  - MenuAudio
   layers:
   - Default
   - TransparentFX
