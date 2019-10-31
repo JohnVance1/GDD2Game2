@@ -4088,10 +4088,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (55)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -4099,6 +4095,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (55)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
@@ -4691,10 +4691,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (53)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -4702,6 +4698,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (53)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
@@ -4784,10 +4784,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (117)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -4795,6 +4791,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (117)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -6050,10 +6050,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (107)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -6061,6 +6057,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (107)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -6313,10 +6313,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (109)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -6324,6 +6320,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (109)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -6826,10 +6826,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: LargeTree
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -6837,6 +6833,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: LargeTree
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -7767,10 +7767,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (113)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -7778,6 +7774,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (113)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -9061,10 +9061,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (118)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -9072,6 +9068,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (118)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -9894,10 +9894,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (101)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -9905,6 +9901,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (101)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -11237,10 +11237,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (54)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -11248,6 +11244,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (54)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
@@ -11910,10 +11910,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (119)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -11921,6 +11917,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (119)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -12083,10 +12083,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (110)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -12094,6 +12090,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (110)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -12256,10 +12256,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_02 (33)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -12267,6 +12263,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_02 (33)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
       propertyPath: m_Layer
@@ -13205,10 +13205,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (123)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -13216,6 +13212,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (123)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -13633,10 +13633,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (49)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -13644,6 +13640,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (49)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
@@ -14801,10 +14801,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (102)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -14812,6 +14808,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (102)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -17422,10 +17422,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (50)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -17433,6 +17429,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (50)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
@@ -17848,10 +17848,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (103)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -17859,6 +17855,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (103)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -18346,10 +18346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (56)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -18357,6 +18353,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (56)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
@@ -18692,37 +18692,37 @@ PrefabInstance:
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.33022
+      value: -78.47
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 109.27027
+      value: 108.76
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -213.55
+      value: -217.75
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
@@ -18737,7 +18737,7 @@ PrefabInstance:
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
@@ -19279,10 +19279,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (57)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -19290,6 +19286,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (57)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
@@ -19550,10 +19550,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (114)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -19561,6 +19557,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (114)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -19728,10 +19728,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (106)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -19739,6 +19735,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (106)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -20576,10 +20576,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (111)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -20587,6 +20583,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (111)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -21932,10 +21932,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_02 (32)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -21943,6 +21939,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_02 (32)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 0ba9a6b9c80107a4dafb3a3067123c79, type: 3}
       propertyPath: m_Layer
@@ -22198,10 +22198,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (116)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -22209,6 +22205,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (116)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -22799,37 +22799,37 @@ PrefabInstance:
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.358246
+      value: -90.62
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 109.150856
+      value: 109.01
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -199.64
+      value: -217.75
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
@@ -22844,7 +22844,7 @@ PrefabInstance:
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7840792364255810070, guid: 8a4ddca17d10ab14489729c912f0889c,
         type: 3}
@@ -22956,10 +22956,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (112)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -22967,6 +22963,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (112)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -26204,10 +26204,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (122)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -26215,6 +26211,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (122)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -27892,10 +27892,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_04 (115)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -27903,6 +27899,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_04 (115)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 3377073e3e89c874cb513eee713eff89, type: 3}
       propertyPath: m_Layer
@@ -29658,10 +29658,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579507901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
-      propertyPath: m_Name
-      value: dead_tree_01 (52)
-      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -29669,6 +29665,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
+      propertyPath: m_Name
+      value: dead_tree_01 (52)
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 44964e5ac51dbf54596a4b4ebc4f6b2a, type: 3}
       propertyPath: m_Layer
