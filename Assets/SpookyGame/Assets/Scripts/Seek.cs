@@ -14,7 +14,6 @@ public class Seek : MonoBehaviour
 
     public GameObject target;
     public GameObject seeker;
-    public GameObject parentSeeker;
     private GameObject UI;
 
     Rigidbody sBody;
@@ -36,7 +35,6 @@ public class Seek : MonoBehaviour
         
         SPos = seeker.transform.position;
 
-        //PSPos = parentSeeker.transform.position;
 
         velocity = seeker.GetComponent<Rigidbody>().velocity;
 
