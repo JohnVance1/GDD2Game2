@@ -45,15 +45,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
     albedo: {r: 1, g: 1, b: 1, a: 1}
-    meanFreePath: 10
+    meanFreePath: 15
     asymmetry: 0
     volumeMask: {fileID: 0}
     textureScrollingSpeed: {x: 0, y: 0, z: 0}
     textureTiling: {x: 1, y: 1, z: 1}
-    positiveFade: {x: 0.058693416, y: 0.60233605, z: 0.041594423}
+    positiveFade: {x: 0.029346708, y: 0.30116802, z: 0.020797212}
     negativeFade: {x: 0, y: 0, z: 0}
     m_EditorUniformFade: 0
-    m_EditorPositiveFade: {x: 0.058693416, y: 0.60233605, z: 0.041594423}
+    m_EditorPositiveFade: {x: 0.029346708, y: 0.30116802, z: 0.020797212}
     m_EditorNegativeFade: {x: 0, y: 0, z: 0}
     m_EditorAdvancedFade: 1
     size: {x: 170.37686, y: 16.602028, z: 240.41685}

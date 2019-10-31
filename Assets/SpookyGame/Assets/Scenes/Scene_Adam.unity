@@ -132,11 +132,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PostProcessing
       objectReference: {fileID: 0}
-    - target: {fileID: 7137165427994026163, guid: f45bf232818bbb44395d5d08b97d9e48,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7137165427994026162, guid: f45bf232818bbb44395d5d08b97d9e48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -191,34 +186,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887037561, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
-      propertyPath: parameters.positiveFade.x
-      value: 0.029346708
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887037561, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
-      propertyPath: parameters.m_EditorPositiveFade.x
-      value: 0.029346708
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887037561, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
-      propertyPath: parameters.positiveFade.y
-      value: 0.30116802
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887037561, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
-      propertyPath: parameters.m_EditorPositiveFade.y
-      value: 0.30116802
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887037561, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
-      propertyPath: parameters.positiveFade.z
-      value: 0.020797212
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887037561, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
-      propertyPath: parameters.m_EditorPositiveFade.z
-      value: 0.020797212
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887037561, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
-      propertyPath: parameters.meanFreePath
-      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
@@ -635,6 +602,31 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 527453516832965784, guid: 46e2d1e986af1e8439c61eaade644e64,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276843109650460567, guid: 46e2d1e986af1e8439c61eaade644e64,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276843109650460567, guid: 46e2d1e986af1e8439c61eaade644e64,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276843109650460567, guid: 46e2d1e986af1e8439c61eaade644e64,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276843109650460567, guid: 46e2d1e986af1e8439c61eaade644e64,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276843109650460567, guid: 46e2d1e986af1e8439c61eaade644e64,
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
