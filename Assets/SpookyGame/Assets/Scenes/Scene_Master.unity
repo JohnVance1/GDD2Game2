@@ -192,6 +192,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1887037562, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -55.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f45bf232818bbb44395d5d08b97d9e48, type: 3}
 --- !u!1001 &141675675
@@ -779,6 +783,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4923581394244020299, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581394304303954, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581394350493740, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581394399054780, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581394417289358, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581394481145483, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581395192282266, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581395204269163, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581395428804737, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581395436242339, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581395464243645, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
+    - target: {fileID: 4923581395935471850, guid: 0b6dc1af059b51e4988c656fd56f1759,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 535444814}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b6dc1af059b51e4988c656fd56f1759, type: 3}
 --- !u!1 &368232872 stripped
@@ -994,7 +1058,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 0.7073247, g: 0.77963686, b: 0.8018868, a: 1}
-  m_Intensity: 5.14159
+  m_Intensity: 3.54159
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1039,7 +1103,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 3.8894e-41, z: 0, w: 2.8158e-41}
+  m_BoundingSphereOverride: {x: 0, y: 1.096e-42, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1143,7 +1207,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 5.14159
+  displayLightIntensity: 3.54159
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
