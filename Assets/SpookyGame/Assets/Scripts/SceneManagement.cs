@@ -19,7 +19,7 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
     void Update()
     {
         Debug.Log(button);
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             menuAudio.GetComponent<AudioSource>().volume = 1.0f;
 
@@ -27,36 +27,49 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                //if (Input.GetMouseButtonUp(0))
-                    SceneManager.LoadScene(2);
             }
             else if (button == "MenuButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                //if (Input.GetMouseButtonUp(0))
-                    SceneManager.LoadScene(0);
             }
             else if (button == "CreditsButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                //if (Input.GetMouseButtonUp(0))
-                    SceneManager.LoadScene(1);
             }
             else if (button == "ResumeButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                //if (Input.GetMouseButtonUp(0))
-                    GameObject.FindGameObjectWithTag("UI").GetComponent<GameManager>().TogglePauseMenu();
             }
             else if (button == "QuitButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
-                //if (Input.GetMouseButtonUp(0))
-                    Application.Quit();
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (button == "PlayButton")
+            {
+                SceneManager.LoadScene(2);
+            }
+            else if (button == "MenuButton")
+            {
+                SceneManager.LoadScene(0);
+            }
+            else if (button == "CreditsButton")
+            {
+                SceneManager.LoadScene(1);
+            }
+            else if (button == "ResumeButton")
+            {
+                GameObject.FindGameObjectWithTag("UI").GetComponent<GameManager>().TogglePauseMenu();
+            }
+            else if (button == "QuitButton")
+            {
+                Application.Quit();
             }
         }
     }
