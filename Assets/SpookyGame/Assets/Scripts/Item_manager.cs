@@ -163,6 +163,9 @@ public class Item_manager : MonoBehaviour
 
     void OnGUI()
     {
+        //display current progress
+        GUI.Label(new Rect(10, 5, 250, 50), "Collected: " + itemsCollected + "/" + items.Length);
+
         if (itemNear && lookingAtItem) //if the player is near an item, tell them they can pick it up
         {
             GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 + 60, 250, 50), "Press E to pickup item");
