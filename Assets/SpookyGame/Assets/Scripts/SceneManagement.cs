@@ -18,7 +18,7 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(button);
+        Debug.Log(button);
         if(Input.GetMouseButtonDown(0))
         {
             menuAudio.GetComponent<AudioSource>().volume = 1.0f;
@@ -57,6 +57,14 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 menuAudio.GetComponent<AudioSource>().Play();
                 //if (Input.GetMouseButtonUp(0))
                     Application.Quit();
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 4)
+            {
+                SceneManager.LoadScene(0);
             }
         }
     }

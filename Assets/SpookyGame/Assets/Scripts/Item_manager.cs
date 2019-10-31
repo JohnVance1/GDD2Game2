@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Item_manager : MonoBehaviour
 {
@@ -34,6 +35,10 @@ public class Item_manager : MonoBehaviour
     {
         itemCheck();
         interactableCheck();
+        if(itemList.Count <= 0)
+        {
+            SceneManager.LoadScene(4);
+        }
     }
 
     void itemCheck()
