@@ -64,7 +64,7 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
         button = name;
-        menuAudio.GetComponent<AudioSource>().volume = 0.5f;
+        menuAudio.GetComponent<AudioSource>().volume = 0.4f;
         menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonHover");
         menuAudio.GetComponent<AudioSource>().Play();
     }
@@ -72,7 +72,7 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerExit(PointerEventData pointerEventData)
     {
         button = "";
-        menuAudio.GetComponent<AudioSource>().volume = 0.5f;
+        menuAudio.GetComponent<AudioSource>().volume = 0.2f;
         menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonHover");
         menuAudio.GetComponent<AudioSource>().Play();
     }
