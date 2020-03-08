@@ -13,7 +13,9 @@ public class GameOver : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Skeleton") && on)
         {
-            SceneManager.LoadScene(3);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene("Scene_GameOver");
         }
     }
 

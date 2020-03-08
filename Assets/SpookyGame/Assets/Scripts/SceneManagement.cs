@@ -18,7 +18,6 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(button);
         if(Input.GetMouseButtonDown(0))
         {
             menuAudio.GetComponent<AudioSource>().volume = 1.0f;
@@ -28,21 +27,21 @@ public class SceneManagement : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
                 //if (Input.GetMouseButtonUp(0))
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene("Scene_Master");
             }
             else if (button == "MenuButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
                 //if (Input.GetMouseButtonUp(0))
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene("Scene_MainMenu");
             }
             else if (button == "CreditsButton")
             {
                 menuAudio.GetComponent<AudioSource>().clip = (AudioClip)Resources.Load("BonyBoy_ButtonSelect");
                 menuAudio.GetComponent<AudioSource>().Play();
                 //if (Input.GetMouseButtonUp(0))
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene("Scene_Credits");
             }
             else if (button == "ResumeButton")
             {

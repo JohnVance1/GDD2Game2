@@ -68,7 +68,7 @@ public class Seek : MonoBehaviour
 
             Vector3 vecVelocity = SPos - TPos;
 
-            Debug.Log(timer);
+            //Debug.Log(timer);
 
             timer -= Time.deltaTime;
 

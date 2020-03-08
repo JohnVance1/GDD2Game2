@@ -37,7 +37,8 @@ public class Item_manager : MonoBehaviour
         interactableCheck();
         if(itemList.Count <= 0)
         {
-            SceneManager.LoadScene(4);
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene("Scene_Win");
         }
     }
 
